@@ -1,0 +1,251 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #000000;
+  top: 0;
+  position: fixed;
+  z-index: 20;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px;
+}
+
+.btn {
+  width: 208px;
+  text-decoration: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.back {
+  width: 100%;
+  height: 80%;
+  border-bottom: solid 10px black;
+  padding: 0px;
+  opacity: 0.3;
+}
+
+.logo-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: calc(40% - 25px);
+  text-align: center;
+}
+
+.logomain {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  border-bottom: solid;
+  border-top: solid;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.logo1 {
+  position: relative;
+}
+
+.logo2 {
+  position: relative;
+}
+
+.about-container {
+  position: relative;
+  height: 900px;
+  width: 100%;
+  background-color: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(black, white);
+  margin: 0 auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* センス無かったのでいらないぺこbackground:linear-gradient(rgb(9, 19, 107),rgb(41, 138, 141) 30%,rgb(1, 1, 2)); */
+}
+
+.about {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.7);
+  border: solid 2px;
+  margin: 0 auto;
+  height: 100%;
+  width: 60%;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.about p {
+  position: relative;
+  word-wrap: break-word;
+  display: block;
+  width: calc(100%-400px);
+  margin: 0 auto;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.about img {
+  display: block;
+  border: 2px solid black;
+  padding: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbc2eb), to(#a6c1ee));
+  background: linear-gradient(#fbc2eb, #a6c1ee);
+  margin: 10px auto;
+}
+
+.about h1 {
+  position: relative;
+  width: calc(100%-900px);
+  margin: 20px auto;
+  display: block;
+  background: linear-gradient(-45deg, #102d52, #d631ff);
+  color: rgba(0, 0, 0, 0);
+  -webkit-background-clip: text;
+  border-bottom: solid black 5px;
+  /* chrome非対応だからやめたぺこ　text-decoration: solid underline purple 4px; */
+  font-size: 40px;
+  letter-spacing: -1px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.skills h1 {
+  width: 400px;
+  margin: 20px auto;
+  display: block;
+  background: linear-gradient(-45deg, #102d52, #d631ff);
+  color: rgba(0, 0, 0, 0);
+  -webkit-background-clip: text;
+  border-bottom: black solid 5px;
+  /* chrome非対応だからやめたぺこ　text-decoration: solid underline purple 4px; */
+  font-size: 40px;
+  letter-spacing: -1px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.skill-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 0 25%;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.skill-container div {
+  width: 200px;
+  border: 2px solid #bbbbff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 4px;
+}
+/*# sourceMappingURL=style.css.map */

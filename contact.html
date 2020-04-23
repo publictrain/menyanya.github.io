@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="import.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- Font awesomeぺこ -->
+    <script src="https://kit.fontawesome.com/b7fafbb8d7.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- ハンバーガー -->
+    <div id="app">
+    </head>
+    <transition name="navi">
+      <nav class="navi" v-show="navi">
+        <ul class="navi__wrap">
+          <ul><a href="index.html">Top</a></ul>
+          <ul><a href="index.html#tolink0">About</a></ul>
+          <ul><a href="index.html#tolink1">Skills</a></ul>
+          <ul><a href="#"onclick="alert('まだ実績がないので、これから作ります！');return false;">Works</a></ul>
+          <ul><a href="contact.html">Contact</a></ul>
+    
+    
+        </ul>
+      </nav>
+     </transition>
+    
+        <div class="hamburger" @click="naviOpen" :class="{'is-active': active}">
+          <div ></div>
+          <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          </a>
+        </div>
+    
+    
+    <header>
+      <div class="container">
+        <a class="btn" href="index.html">Top</a>
+        <a class="btn" href="index.html#tolink0">About</a>
+        <a class="btn" href="index.html#tolink1">Skills</a>
+        <a class="btn" href="#"onclick="alert('まだ実績がないので、これから作ります！');return false;">Works</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+    </div>
+    
+    </header>
+    <!-- ハンバーガー終わり -->
+
+    <div class="icons">
+        <a href="https://twitter.com/publictrain2">
+        <div class="fab fa-twitter-square fa-10x">
+            <a class="twi" href="https://twitter.com/publictrain2"></a>
+            <p>Twitter: @publictrain2</p>
+        </div>
+        <div class="fas fa-envelope fa-10x">
+            <a class="gmai" href="https://mail.google.com/mail/?view=cm&to=publictrain3@gmail.com"></a>            
+            <p>Gmail: publictrain3@gmail.com</p>
+        </div>
+        </div>
+
+    <div class="contact-main">
+        <!-- <img src="" alt=""> 2020/04/17　後で描く -->
+        <!-- animation -->
+       
+       
+        <div class="contact-container">
+            <div class="contact-1"></div>
+            <div class="contact-2"></div>
+            <div class="contact-3"></div>
+            <div class="contact-4"></div>
+            <div class="contact-5"></div>
+  
+
+            <div class="contact-6"></div>
+            <div class="contact-7"></div>
+            <div class="contact-8"></div>
+            <div class="contact-9"></div>
+            <div class="contact-10"></div>
+    
+
+            <div class="contact-left"></div>
+            <div class="contact-right"></div>
+        <!-- animation -->
+        </div>
+
+        
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+</body>
+</html>

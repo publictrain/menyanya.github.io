@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="import.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <div id="app">
+</head>
+<transition name="navi">
+  <nav class="navi" v-show="navi">
+    <ul class="navi__wrap">
+      <ul><a href="index.html">Top</a></ul>
+      <ul><a href="#tolink0">About</a></ul>
+      <ul><a href="#tolink1">Skills</a></ul>
+      <ul><a href="#"onclick="alert('まだ実績がないので、これから作ります！');return false;">Works</a></ul>
+      <ul><a href="contact.html">Contact</a></ul>
+
+
+    </ul>
+  </nav>
+ </transition>
+<body>
+
+    <div class="hamburger" @click="naviOpen" :class="{'is-active': active}">
+      <div ></div>
+      <a class="menu-trigger" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      </a>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-1"></div>
+      <div class="contact-2"></div>
+      <div class="contact-3"></div>
+      <div class="contact-4"></div>
+      <div class="contact-5"></div>
+
+
+      <div class="contact-6"></div>
+      <div class="contact-7"></div>
+      <div class="contact-8"></div>
+      <div class="contact-9"></div>
+      <div class="contact-10"></div>
+
+
+     
+
+
+<header>
+  <div class="container">
+    <a class="btn" href="index.html">Top</a>
+    <a class="btn" href="#tolink0">About</a>
+    <a class="btn" href="#tolink1">Skills</a>
+    <a class="btn" href="#"onclick="alert('まだ実績がないので、これから作ります！');return false;">Works</a>
+    <a class="btn" href="contact.html">Contact</a>
+  </div>
+</div>
+
+</header>
+
+<div class="main">
+  <img src="web-back.png" class="back">
+  <div class="logo-wrapper">
+   <div class="logomain">
+      
+      <div class="logo1" data-text="menya's">menya's</div>
+      <div class="logo2" data-text="Portfolio">Portfolio</div>
+    </div>
+  </div>  
+</div>
+
+
+<div class ="about-container" id="tolink0">
+  <div class="about" >
+
+      <h1 class="fadfad">About</h1>
+      <img src="face.png" alt="">
+      <p>　Menya（めにゃー）と申します。大学三年生（21歳）で、人文社会学系の学科に所属しています。独学で主にセキュリティやプログラミング、ネットワーク等を学び、昨年度、応用情報処理技術者試験に合格しました。<br><br>
+      <p>　現在は情報処理安全確保支援士合格を目指しながら、アルゴリズムを学びつつコーディングスキルを向上させ、加えてバックエンド、フロントエンド問わず様々な技術を修得していく予定です。<br><br></p>
+      <p>　絵を描くことが好きで、アナログでは主に木炭や水彩、デジタルではiPad Proを使って絵を描いています。いずれクオリティの高い絵が創れるように頑張っています。楽器（Tb.）も嗜みます。</p>
+  
+      </p>
+
+    </div>
+  
+
+</div>
+
+
+<div class="skills">
+  <h1 id="tolink1">Skills</h1>
+    <div class="skill-container">
+  <div class="danger">ITとはなんの関係もありませんが、甲種危険物取扱者です。中学生の時に乙種から取得を始めました。全ての危険物が取り扱えます。</div>
+  <div class="ap">応用情報処理技術者です。「高度IT人材」とIPAによって定義されています。</div>
+  <div class="lang">CとC++をBOFの勉強で少しだけ使いました。C♯を競技プログラミングでメインとして使用しており、単純なDP程度の実装ができます。</div>
+  <div class="illu">illustratorライクのアプリケーションのVectornatorや、CLIP STUDIO、Procreateが使用できます。</div>
+  <div class="front">HTML&SCSS,Vue.js,jQuaryでこのサイトは構成されており、ある程度の実装ができます。</div>
+  <div class="kali">kali-linuxを一時期使用し、CTFの真似事を行っていたので、少しペネトレーションテストができます。</div>
+    </div>
+  </div>
+
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script type="text/javascript" src="test.js"></script></div>
+
+
+
+</body>
+
+
+</html>
