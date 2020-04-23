@@ -5,7 +5,7 @@
 
 }
 @media screen and (max-width:1060px){
-    /* 起点があたおかな所にあるぺこ、無理くり実装してるぺこね */
+   
 @keyframes nyarla0 {
         50% {transform: translateY(25px);}
         75%{}
@@ -22,8 +22,7 @@
     header{
   display:none;
 }
-/* もしスマホで見たときにheightが足りなかったらここのサイズを弄るぺこ！
-ハンバーガー以外の範囲を0opacityにしてるぺこよ */
+/* ハンバーガー以外の範囲を0:opacityにしてるぺこよ */
 .hamburger{
     top:20px;
     width:60px;
